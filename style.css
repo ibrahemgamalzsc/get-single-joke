@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    background-color: moccasin;
+}
+
+.container {
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    padding-block: 25px;
+    top: 50%;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    gap: 20px;
+}
+
+.container .emoji-wrapper {
+    width: 20%;
+}
+
+
+
+.container .emoji-wrapper img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.container button {
+    width: 200px;
+    outline: none;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: moccasin;
+}
+
+
+.container .joke-wrapper p {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    padding-inline: 35px;
+    line-height: 2;
+    opacity: 1;
+}
+
+.container .joke-wrapper .fade {
+    animation: fadeIn 1.5s;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
